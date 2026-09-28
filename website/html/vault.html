@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vault</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style3.css">
+  <link rel="stylesheet" href="../css/hamburger.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="vault-page">
+  <header class="MenuBar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vault.html">Password Vault</a></li>
+      <li><a href="strength.html">Strength Checker</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="sidebar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vault.html">Password Vault</a></li>
+      <li><a href="strength.html">Strength Checker</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+  <section class="parent">
+    <div class="container-vault">
+      <h1 class="password-vault" id="h1-vault">&lt; Password Vault /&gt;</h1>
+      <h2 class="password-vault">Your own Password Manager</h2>
+
+      <!-- Form -->
+      <form action="#">
+        <input type="text" name="website" id="website" placeholder="Enter website URL"><br>
+        <div class="username-password-container">
+          <input type="text" name="username" id="username" placeholder="Enter Username">
+          <input type="password" name="password" id="password" placeholder="Enter Password">
+          <i class="fa-solid fa-eye-slash" id="show-password"></i>
+        </div>
+        <button type="button" id="save"><i class="fa-solid fa-plus"></i> Save</button>
+      </form>
+    </div>
+
+    <div class="container-passwords">
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th id="website-col" class="first-row">Website</th>
+            <th id="username-col" class="first-row">Username</th>
+            <th id="passwords-col" class="first-row">Password</th>
+            <th id="actions-col" class="first-row">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will be added here by script.js -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="../js/hamburger.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

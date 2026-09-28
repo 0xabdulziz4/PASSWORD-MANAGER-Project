@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Tester</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/hamburger.css">
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="strength-page">
+  <header class="MenuBar">
+    <div class="logo"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vault.html">Password Vault</a></li>
+      <li><a href="strength.html">Strength Checker</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="sidebar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vault.html">Password Vault</a></li>
+      <li><a href="strength.html">Strength Checker</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Is Your Password Strong Enough?</h2>
+    <p>This tool helps you test the strength of your password by checking if you are following best practices for
+      password security.</p>
+    <ul>
+      <li id="lengthRule" class="rule">At least 8 characters long</li>
+      <li id="uppercaseRule" class="rule">Contains an uppercase letter</li>
+      <li id="lowercaseRule" class="rule">Contains a lowercase letter</li>
+      <li id="numberRule" class="rule">Contains a number</li>
+      <li id="specialCharRule" class="rule">Contains a special character (e.g., @, $, !)</li>
+    </ul>
+    <div class="password-container">
+      <input type="password" id="password" class="password-input" placeholder="Enter your password">
+      <div class="strength-text" id="strengthText">Strength: Weak</div>
+      <div class="strength-indicator" id="strengthIndicator"></div>
+    </div>
+  </section>
+
+  <script src="../js/hamburger.js"></script>
+  <script src="../js/script2.js"></script>
+</body>
+
+</html>

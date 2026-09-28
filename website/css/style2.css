@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  background-color: #1a1a1a;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.password-container,
+.strength-indicator,
+.password-input {
+  width: 100%;
+}
+
+.strength-indicator {
+  height: 10px;
+  background-color: lightgray;
+  margin-top: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.strong {
+  background-color: #4caf50;
+}
+.medium {
+  background-color: #ffeb3b;
+}
+.weak {
+  background-color: #f44336;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #262626;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+h2,
+h3 {
+  color: #f9bf00;
+}
+
+p,
+li {
+  color: #f1f1f1;
+  line-height: 1.6;
+  text-align: center;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f9bf00;
+  color: #1a1a1a;
+  font-weight: 750;
+}

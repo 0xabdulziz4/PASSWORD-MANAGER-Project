@@ -1,0 +1,81 @@
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default for desktop */
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px; /* Add spacing on the right of the hamburger */
+}
+
+.hamburger i {
+  color: #1a1a1a;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 250px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar .close-btn {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+  color: #f9bf00;
+  text-decoration: none;
+}
+
+.close-btn i {
+  color: #f9bf00;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  header.MenuBar {
+    justify-content: space-between; /* Space between logo and hamburger for mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide desktop navbar */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    margin-right: 20px; /* Add spacing on the right of the hamburger */
+  }
+}
+
+@media (min-width: 769px) {
+  header.MenuBar {
+    justify-content: center; /* Center the logo and nav links for desktop */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu in desktop mode */
+  }
+
+  .nav-links {
+    display: flex; /* Show desktop navbar */
+  }
+}
